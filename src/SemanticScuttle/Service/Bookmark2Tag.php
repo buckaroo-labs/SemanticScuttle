@@ -114,7 +114,7 @@ class SemanticScuttle_Service_Bookmark2Tag extends SemanticScuttle_DbService
             $tags = array_values($temp);
         } else {
             // Unfiled
-            $tags[] = 'system:unfiled';
+            $tags = array('system:unfiled');
         }
 
         // Media and file types
