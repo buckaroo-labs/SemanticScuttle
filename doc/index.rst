@@ -9,9 +9,9 @@ First reads
 - `installation guide`_
 - `upgrade instructions`_
 
-.. _README: README.html
-.. _installation guide: INSTALL.html
-.. _upgrade instructions: UPGRADE.html
+.. _README: README.rst
+.. _installation guide: INSTALL.txt
+.. _upgrade instructions: UPGRADE.txt
 
 
 
@@ -23,11 +23,11 @@ Features
 - `Configuration files`__
 - Tools__
 
-__ authentication.html
-__ ssl-client-certificates.html
-__ themes.html
-__ configuration.html
-__ tools.html
+__ authentication.rst
+__ ssl-client-certificates.rst
+__ themes.rst
+__ configuration.rst
+__ tools.rst
 
 
 
@@ -41,10 +41,10 @@ Developer documentation
 - `How to translate SemanticScuttle`__
 - `ChangeLog`__
 
-__ developers/rules.html
-__ developers/api.html
-__ developers/debugging.html
-__ developers/release-new-version.html
-__ developers/running-unit-tests.html
-__ developers/translation.html
-__ ChangeLog.html
+__ developers/rules.rst
+__ developers/api.rst
+__ developers/debugging.rst
+__ developers/release-new-version.rst
+__ developers/running-unit-tests.rst
+__ developers/translation.rst
+__ ChangeLog.rst
