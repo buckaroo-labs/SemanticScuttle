@@ -13,17 +13,17 @@ Available under the GNU General Public License
 
 Installation
 ============
-See `INSTALL.rst`__
+See `INSTALL.txt`__
 
 
-__ INSTALL.html
+__ INSTALL.txt
 
 
 Upgrading from a previous version
 =================================
 See `UPGRADE.txt`__
 
-__ UPGRADE.html
+__ UPGRADE.txt
 
 
 Public API
