@@ -8,7 +8,7 @@ SemanticScuttle is a social bookmarking tool experimenting with new features lik
 
 ## Warning
 
-We offer no warranty, express or implied, regarding the security of this application. No security testing has been performed, but a visual review has revealed highly questionable coding practices. The associated risks may be mitigated by turning off anonymous editing and user registration capabilities after a single administrative user has been created (see configuration.rst file in doc folder), and/or not exposing the application to the internet. 
+We offer no warranty, express or implied, regarding the security of this application. No security testing has been performed, but a visual review has revealed highly questionable coding practices. Many of the associated risks may be mitigated by turning off anonymous editing and user registration capabilities after a single administrative user has been created (see configuration.rst file in doc folder), and/or not exposing the application to the internet. 
 
 ## Features
   * LDAP/Active Directory authentication
