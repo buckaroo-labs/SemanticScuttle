@@ -137,7 +137,8 @@ class SemanticScuttle_Service_Tag extends SemanticScuttle_DbService
     /* normalize the input tags which could be a string or an array*/
     function normalize($tags) {
         //clean tags from strange characters
-        $tags = str_replace(array('"', '\'', '/'), "_", $tags);
+        //2023-12-20 add IF condition to avoid 'Deprecated' warning
+        if (!is_null($tags)) $tags = str_replace(array('"', '\'', '/'), "_", $tags);
 
         //normalize
         if(!is_array($tags)) {
