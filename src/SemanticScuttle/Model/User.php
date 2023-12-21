@@ -85,6 +85,9 @@ class SemanticScuttle_Model_User
             $user = $us->getUser($this->id);
             $this->privateKey = $user['privateKey'];
         }
+        //2023-12-20 add line to avoid 'Deprecated' warning
+        if (is_null($this->privateKey)) return null;
+
         if ($sanitized == true) {
             return substr($this->privateKey, -32);
         } else {
