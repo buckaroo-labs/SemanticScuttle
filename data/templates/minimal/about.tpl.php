@@ -6,7 +6,7 @@ $this->includeTemplate($GLOBALS['top_include']);
 	<div class="row">
 
 		<ul>
-		<li><a target="_blank" href="https://github.com/buckaroo-labs/semantic-scuttle">Semantic Scuttle</a> <?php echo T_('is licensed under the ');?> <a  target="_blank"href="http://www.gnu.org/copyleft/gpl.html"><acronym title="GNU\'s Not Unix">GNU</acronym> General Public License</a> (<?php echo T_('you can freely host it on your own web server'); ?>)
+		<li><a target="_blank" href="https://github.com/buckaroo-labs/SemanticScuttle">Semantic Scuttle</a> <?php echo T_('is licensed under the ');?> <a  target="_blank"href="http://www.gnu.org/copyleft/gpl.html"><acronym title="GNU\'s Not Unix">GNU</acronym> General Public License</a> (<?php echo T_('you can freely host it on your own web server'); ?>)
 		<?php echo sprintf(T_(' and supports most of the <a target="_blank" href="http://www.delicious.com/help/api">del.icio.us <abbr title="Application Programming Interface">API</abbr></a>. '), $GLOBALS['sitename']); ?></li>
 		<li><a target="_blank" href="https://github.com/jonrandoem/sscuttlizr/">Sscuttlizr</a> <?php echo T_('is licensed under the ');?> <a target="_blank" href="https://github.com/jonrandoem/sscuttlizr/blob/master/LICENSE">MIT License</a>
 
