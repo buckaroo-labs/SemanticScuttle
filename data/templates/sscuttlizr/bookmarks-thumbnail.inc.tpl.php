@@ -5,6 +5,9 @@
  *
  * Expects a $row variable with bookmark data.
  */
+//2023-12-20 add line to avoid warning
+if (!isset($GLOBALS['enableWebsiteThumbnails'])) return;
+
 if (!$GLOBALS['enableWebsiteThumbnails']) {
     return;
 }
