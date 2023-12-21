@@ -37,6 +37,12 @@ class sql_db
 	var $num_rows = array();
 	var $current_row = array();
 
+	/* 2023-12-20 modifications to avoid "Deprecated" warnings in sql_connect function*/
+	var $user;
+	var $persistency;
+	var $dbname;
+	var $server;
+	/*2023-12-20 end */
 	function sql_connect($sqlserver, $sqluser, $sqlpassword, $database, $port = false, $persistency = false)
 	{
 		$this->persistency = $persistency;
