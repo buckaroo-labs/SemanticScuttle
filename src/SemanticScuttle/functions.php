@@ -167,7 +167,8 @@ function createVoteURL($for, $bId)
 function shortenString($string, $maxSize=75) {
 	$output = '';
 	if(strlen($string) > $maxSize) {
-		$output = substr($string, 0, $maxSize/2).'...'.substr($string, -$maxSize/2);
+		//2023-12-20 add ROUND() function to avoid 'Deprecated' warning
+		$output = substr($string, 0, $maxSize/2).'...'.substr($string, -round($maxSize/2));
 	} else {
 		$output = $string;
 	}
