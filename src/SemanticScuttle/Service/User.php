@@ -301,6 +301,8 @@ class SemanticScuttle_Service_User extends SemanticScuttle_DbService
      */
     public function isPrivateKeyValid($privateKey)
     {
+        //2023-12-20 add line for PHP 8 Deprecated warning
+        if (is_null($privateKey)) return false;
         // check length of private key
         if (strlen($privateKey) == 32) {
             return true;
