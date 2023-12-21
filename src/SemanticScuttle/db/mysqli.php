@@ -32,6 +32,12 @@ class sql_db
 	var $open_queries = array();
 
 	var $indexed = 0;
+	/* 2023-12-20 modifications to avoid "Deprecated" warnings in sql_connect function*/
+	var $user;
+	var $persistency;
+	var $dbname;
+	var $server;
+	/*2023-12-20 end */
 
 	function sql_connect($sqlserver, $sqluser, $sqlpassword, $database, $port = false, $persistency = false)
 	{
