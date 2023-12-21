@@ -41,7 +41,7 @@ class sql_db
 	var $rowset;
 	var $row;
 	var $cur_index;
-	/*2023-12-20 end */
+	/*2023-12-20 end block (see more below)*/
 
 	function sql_connect($sqlserver, $sqluser, $sqlpassword, $database, $port = false, $persistency = false)
 	{
