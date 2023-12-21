@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<title><?php echo filter($GLOBALS['sitename'] .(isset($pagetitle) ? ' » ' . $pagetitle : '')); ?></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="<?php echo $theme->resource('icon.png');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo $theme->resource('css/bootstrap.min.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo $theme->resource('css/font-awesome.min.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo $theme->resource('scuttle.css');?>">
-	<link rel="search" type="application/opensearchdescription+xml" href="<?php echo ROOT ?>api/opensearch.php" title="<?php echo htmlspecialchars($GLOBALS['sitename']) ?>">
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="icon" type="image/png" href="<?php echo $theme->resource('icon.png');?>"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo $theme->resource('css/bootstrap.min.css');?>"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo $theme->resource('css/font-awesome.min.css');?>"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo $theme->resource('scuttle.css');?>"/>
+	<link rel="search" type="application/opensearchdescription+xml" href="<?php echo ROOT ?>api/opensearch.php" title="<?php echo htmlspecialchars($GLOBALS['sitename']) ?>"/>
 	<?php
 	if (isset($rsschannels)) {
 		$size = count($rsschannels);
