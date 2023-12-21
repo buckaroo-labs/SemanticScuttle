@@ -1,4 +1,4 @@
-# SemanticScuttle
+# ![Bookmark star icon](icon.png) SemanticScuttle
 
 SemanticScuttle is a social bookmarking tool experimenting with new features like structured (heirarchical) tags and collaborative descriptions of tags. Originally a fork of Scuttle, it has overtaken its ancestor in stability, features and usability. The querwurzel [fork](https://github.com/querwurzel/semantic-scuttle) brought the software up to PHP 7.3 compatibility, but is no longer in development. This fork's aims are to:
   * bring app compatibility up to PHP 8.2 (for at least the MySQL/mysqli database option, possibly others), avoiding the "Deprecated" messages under PHP 8.2 that will be the "Fatal Error"s of a future PHP version;
