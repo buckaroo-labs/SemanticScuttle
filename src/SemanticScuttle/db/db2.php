@@ -32,7 +32,12 @@ class sql_db
 	var $rowset = array();
 	var $row_index;
 	var $num_queries = 0;
-
+	/* 2023-12-20 modifications to avoid "Deprecated" warnings in sql_connect function*/
+	var $user;
+	var $persistency;
+	var $dbname;
+	var $server;
+	/*2023-12-20 end */
 	//
 	// Constructor
 	//
