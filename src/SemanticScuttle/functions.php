@@ -168,7 +168,7 @@ function shortenString($string, $maxSize=75) {
 	$output = '';
 	if(strlen($string) > $maxSize) {
 		//2023-12-20 add ROUND() function to avoid 'Deprecated' warning
-		$output = substr($string, 0, $maxSize/2).'...'.substr($string, -round($maxSize/2));
+		$output = substr($string, 0, $maxSize/2).'...'.substr($string, -round((float)$maxSize/2));
 	} else {
 		$output = $string;
 	}
