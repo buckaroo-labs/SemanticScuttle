@@ -37,6 +37,10 @@ class sql_db
 	var $persistency;
 	var $dbname;
 	var $server;
+	/* 2023-12-20 more modifications to avoid "Deprecated" warnings */
+	var $rowset;
+	var $row;
+	var $cur_index;
 	/*2023-12-20 end */
 
 	function sql_connect($sqlserver, $sqluser, $sqlpassword, $database, $port = false, $persistency = false)
@@ -147,7 +151,9 @@ class sql_db
 
 				if (is_object($this->query_result))
 				{
-					$this->query_result->cur_index = $this->indexed++;
+					//2023-12-20 modify
+					//$this->query_result->cur_index = $this->indexed++;
+					$this->cur_index = $this->indexed++;
 				}
 
 				if (defined('DEBUG_EXTRA'))
@@ -288,7 +294,9 @@ class sql_db
 
 		if ($query_id)
 		{
-			$cur_index = (is_object($query_id)) ? $query_id->cur_index : $query_id;
+			//2023-12-20 modify
+			//$cur_index = (is_object($query_id)) ? $query_id->cur_index : $query_id;
+			$cur_index = (is_object($query_id)) ? $this->cur_index : $query_id;
 
 			unset($this->rowset[$cur_index]);
 			unset($this->row[$cur_index]);
@@ -321,7 +329,9 @@ class sql_db
 			}
 			else
 			{
-				$cur_index = (is_object($query_id)) ? $query_id->cur_index : $query_id;
+				//2023-12-20 modify
+				//$cur_index = (is_object($query_id)) ? $query_id->cur_index : $query_id;
+				$cur_index = (is_object($query_id)) ? $this->cur_index : $query_id;
 	
 				if (empty($this->row[$cur_index]) && empty($this->rowset[$cur_index]))
 				{
@@ -369,7 +379,9 @@ class sql_db
 			$query_id = $this->query_result;
 		}
 
-		$cur_index = (is_object($query_id)) ? $query_id->cur_index : $query_id;
+		//2023-12-20 modify
+		//$cur_index = (is_object($query_id)) ? $query_id->cur_index : $query_id;
+		$cur_index = (is_object($query_id)) ? $this->cur_index : $query_id;
 
 		unset($this->rowset[$cur_index]);
 		unset($this->row[$cur_index]);
