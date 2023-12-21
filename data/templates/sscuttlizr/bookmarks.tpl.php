@@ -32,7 +32,7 @@ $this->includeTemplate($GLOBALS['top_include']);
 
 <?php if($pageName == PAGE_INDEX && $GLOBALS['welcomeMessage']):?>
 <div class="alert alert-info alert-dismissable">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&#42;</button>
   <p id="welcome"><?php echo $GLOBALS['welcomeMessage'];?></p>
 </div>
 <?php endif?>
