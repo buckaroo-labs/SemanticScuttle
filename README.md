@@ -4,7 +4,7 @@ SemanticScuttle is a social bookmarking tool experimenting with new features lik
   * bring app compatibility up to PHP 8.2 (for at least the MySQL/mysqli database option, possibly others), avoiding the "Deprecated" messages under PHP 8.2 that will be the "Fatal Error"s of a future PHP version;
   * correct broken links in the documentation; and to
   * bundle a responsive theme (forked from [sscuttlizr](https://github.com/jonrandoem/sscuttlizr)) with minimal features, designed for cases in which this app is embedded in a larger system.
-  * secure the application (see warning).
+
 
 ## Warning
 
