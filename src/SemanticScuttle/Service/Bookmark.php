@@ -504,7 +504,9 @@ class SemanticScuttle_Service_Bookmark extends SemanticScuttle_DbService
             'bPrivateNote' => $privateNote,
             'bStatus'      => intval($status),
             'bHash'        => $this->getHash($address),
-            'bShort'       => $short
+            'bShort'       => $short,
+            'bVotes'       => 0,
+            'bVoting'      => 0,
         );
 
         $sql = 'INSERT INTO '. $this->getTableName()
