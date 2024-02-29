@@ -1136,7 +1136,7 @@ class SemanticScuttle_Service_Bookmark extends SemanticScuttle_DbService
 
         // Delete final /
         if (substr($address, -1) == '/') {
-            $address = substr($address, 0, strlen($address)-2);
+            $address = substr($address, 0, -1);
         }
 
         return $address;
