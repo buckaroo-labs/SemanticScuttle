@@ -103,7 +103,15 @@ class SemanticScuttle_Service_User extends SemanticScuttle_DbService
                 GENERAL_ERROR, 'Could not get user',
                 '', __LINE__, __FILE__, $query, $this->db
             );
-            return false;
+            return [ 'uId' => 0,
+                     'username' => '',
+                     'name' => '',
+                     'email' => '',
+                     'homepage' => '',
+                     'content' => '',
+                     'datetime' => NULL,
+                     'isAdmin' => false,
+                     'privateKeey' => '' ];
         }
 
         $row = $this->db->sql_fetchrow($dbresult);
@@ -111,7 +119,15 @@ class SemanticScuttle_Service_User extends SemanticScuttle_DbService
         if ($row) {
             return $row;
         } else {
-            return false;
+            return [ 'uId' => 0,
+                     'username' => '',
+                     'name' => '',
+                     'email' => '',
+                     'homepage' => '',
+                     'content' => '',
+                     'datetime' => NULL,
+                     'isAdmin' => false,
+                     'privateKeey' => '' ];
         }
     }
 
