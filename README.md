@@ -29,4 +29,4 @@ Although a visual code review leads to the conclusion that due attention has bee
   * https://github.com/jonrandoem/sscuttlizr
 
 ## Additional credit
-  * Higher-resolution (256x256) gold star icon courtesy of [FreePNGimg.com]([https://github.com/jonrandoem/sscuttlizr](https://freepngimg.com/png/607-gold-star-png-image)  
+  * Higher-resolution (256x256) gold star icon courtesy of [FreePNGimg.com](https://freepngimg.com/png/607-gold-star-png-image)  
