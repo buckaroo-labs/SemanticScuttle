@@ -21,7 +21,7 @@ Please be aware of the fact that, after successful authentication, the user
 and his scrambled password are stored in the SemanticScuttle database.
 This is required for proper functioning of the software. It does not mean
 that you will be able to login if your external authentication provider
-is offline - you won't, execpt you switch it off in the SemanticScuttle
+is offline - you won't, except you switch it off in the SemanticScuttle
 configuration.
 
 
