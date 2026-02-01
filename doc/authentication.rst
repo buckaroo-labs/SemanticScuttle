@@ -83,7 +83,7 @@ Now that's done, you can configure the single auth options:
 Authentication examples
 =======================
 
-General database authentification
+General database authentication
 ---------------------------------
 Here you also need the PEAR `MDB2 package`_.
 The "``new_link``" option is important!
